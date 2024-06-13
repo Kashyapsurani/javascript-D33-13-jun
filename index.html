@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <form id="sample-form">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="age-range">Age Age:</label>
+            <input type="range" id="age-range" name="age-range" min="0" max="100" value="50">
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="interests">Interests:</label>
+            <input type="checkbox" id="sports" name="interests" value="Sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" id="music" name="interests" value="Music">
+            <label for="music">Music</label>
+            <input type="checkbox" id="movies" name="interests" value="Movies">
+            <label for="movies">Movies</label>
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+
+            <label for="country">Country:</label>
+            <select id="country" name="country" required>
+                <option name="country"  value="India">India</option>
+                <option name="country" value="canada">Canada</option>
+                <option name="country" value="uk">United Kingdom</option>
+                <option name="country" value="australia">Australia</option>
+                <option name="country" value="other">Other</option>
+            </select>
+
+            <input type="submit" onclick="get()" value="Submit">
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
